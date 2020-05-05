@@ -1,3 +1,0 @@
-build out directory
-some sort of edit test
-That was werird how it lagged out
