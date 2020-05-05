@@ -1,2 +1,3 @@
 build out directory
 will test this and then test deleting a file
+test first on creating a file 
