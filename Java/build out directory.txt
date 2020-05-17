@@ -3,3 +3,5 @@ build out directory
 hook jenkins to docker
 
 hook docker to kerberous
+
+learn how to program using json and javascript
