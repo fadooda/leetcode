@@ -5,3 +5,5 @@ hook jenkins to docker
 hook docker to kerberous
 
 learn how to program using json and javascript
+
+learn pyspakr
