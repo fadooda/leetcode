@@ -27,12 +27,10 @@ var isValid = function(s) {
         let char=s.charAt(index)
         let peepchar=stack[stack.length-1]
         let mappedchar=charMap(peepchar)
-        if(char==='[' || char==='{' || char==='('){
+        if(char!=mappedchar){
            stack.push(char)
-        }else if(char=='}' && mappedchar==char || char==']' && mappedchar==char ||char==')' && mappedchar==char){
+        }else {
             stack.pop()
-        }else{
-            return false 
         }
     }
     return stack.length==0
