@@ -1,23 +1,14 @@
 class Solution {
-public int removeElement(int[] nums, int val) {
-     int length=nums.length;
-        for (int i=0; i<length;i++)
-        {  
-            if (nums[i]==val)
-            {   
-                length--;
-                if (length > 0 )
-                {
-                    System.out.println(length);
-                    while( length > 0 && i !=length && nums[length]==val )
-                    {
-                        length--;
-                    }
-                    nums[i]=nums[length];
-                    nums[length]= val; 
-                }
-            }          
+    public int removeElement(int[] nums, int val) {
+        int index = 0; // Slow pointer to place valid elements
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != val) {
+                nums[index] = nums[i]; // Overwrite unwanted values
+                index++;
+            }
         }
-        return length;
-}
+        
+        return index; // The new length of the array without `val`
+    }
 }
